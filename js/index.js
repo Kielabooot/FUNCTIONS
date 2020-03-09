@@ -1,17 +1,5 @@
-let promise = new Promise(function(resolve,reject){
-    grade = 75;
-    if(grade >=60){
-        resolve("pass");
-    }
-    else{
-        reject("fail");
-    }
-});
+setTimeout(()=>{
+document.write(`customer 1 was entertained...`);
+}, 5000);
 
-promise.then(function(message){
-    document.write(`You ${message} the subject`);
-
-
-}).catch(function(message){
-    document.write(`You ${message} the subject`)
-});
+document.write("<h1>customer 2 was entertained...</h1>");
